@@ -60,7 +60,7 @@ export async function runMigrations(): Promise<void> {
   switch (currentVersion) {
     case null:
       await convertExistingFilesToWebP();
-    // Await setVersion('2.0.0');
+      await setVersion('2.0.0');
   }
 
   console.log('=== All migrations completed ===\n');
