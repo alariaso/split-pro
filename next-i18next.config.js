@@ -1,4 +1,4 @@
-const path = require('path');
+import path from 'node:path';
 
 /** @type {import('next-i18next').UserConfig} */
 const config = {
