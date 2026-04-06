@@ -1,3 +1,5 @@
+const path = require('path');
+
 /** @type {import('next-i18next').UserConfig} */
 const config = {
   i18n: {
@@ -20,7 +22,7 @@ const config = {
     ],
     localeDetection: false,
   },
-  localePath: './public/locales',
+  localePath: path.resolve('./public/locales'),
 };
 
 export default config;
